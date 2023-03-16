@@ -26,6 +26,11 @@
 		B822A6E029BA625C00B16999 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B822A6DF29BA625C00B16999 /* FirebaseFirestoreSwift */; };
 		B822A6E229BA625C00B16999 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B822A6E129BA625C00B16999 /* FirebaseStorage */; };
 		B822A6E429BA647A00B16999 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B822A6E329BA647A00B16999 /* AuthViewModel.swift */; };
+		B822A6E629BB751600B16999 /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B822A6E529BB751600B16999 /* ProfilePhotoSelectorView.swift */; };
+		B822A6E929C1C97800B16999 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B822A6E829C1C97800B16999 /* ImagePicker.swift */; };
+		B822A6EB29C1D03400B16999 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B822A6EA29C1D03400B16999 /* ImageUploader.swift */; };
+		B822A6ED29C2016400B16999 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B822A6EC29C2016400B16999 /* UserService.swift */; };
+		B822A6EF29C2031200B16999 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B822A6EE29C2031200B16999 /* User.swift */; };
 		B865318B29B638AC00F40978 /* TwitterSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865318A29B638AC00F40978 /* TwitterSwiftUIApp.swift */; };
 		B865318D29B638AC00F40978 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B865318C29B638AC00F40978 /* ContentView.swift */; };
 		B865318F29B638AF00F40978 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B865318E29B638AF00F40978 /* Assets.xcassets */; };
@@ -55,6 +60,11 @@
 		B822A6D629BA30F200B16999 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 		B822A6D829BA394400B16999 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B822A6E329BA647A00B16999 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		B822A6E529BB751600B16999 /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
+		B822A6E829C1C97800B16999 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B822A6EA29C1D03400B16999 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		B822A6EC29C2016400B16999 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		B822A6EE29C2031200B16999 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B865318729B638AC00F40978 /* TwitterSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B865318A29B638AC00F40978 /* TwitterSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSwiftUIApp.swift; sourceTree = "<group>"; };
 		B865318C29B638AC00F40978 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -194,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				B822A6CD29B9F0A900B16999 /* LoginView.swift */,
+				B822A6E529BB751600B16999 /* ProfilePhotoSelectorView.swift */,
 				B822A6CF29B9F0B500B16999 /* RegistrationView.swift */,
 			);
 			path = Views;
@@ -205,6 +216,14 @@
 				B822A6D629BA30F200B16999 /* AuthHeaderView.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B822A6E729C1C96800B16999 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B822A6E829C1C97800B16999 /* ImagePicker.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B865317E29B638AC00F40978 = {
@@ -226,6 +245,7 @@
 		B865318929B638AC00F40978 /* TwitterSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				B822A6E729C1C96800B16999 /* Utils */,
 				B865319B29B638EE00F40978 /* Extensions */,
 				B865319A29B638E700F40978 /* Model */,
 				B865319929B638DE00F40978 /* Service */,
@@ -267,6 +287,8 @@
 		B865319929B638DE00F40978 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				B822A6EA29C1D03400B16999 /* ImageUploader.swift */,
+				B822A6EC29C2016400B16999 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -274,6 +296,7 @@
 		B865319A29B638E700F40978 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B822A6EE29C2031200B16999 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -455,12 +478,16 @@
 			files = (
 				B88C259929B64742003B167C /* MessagesView.swift in Sources */,
 				B88C259B29B64750003B167C /* ProfileView.swift in Sources */,
+				B822A6ED29C2016400B16999 /* UserService.swift in Sources */,
+				B822A6E929C1C97800B16999 /* ImagePicker.swift in Sources */,
 				B865318D29B638AC00F40978 /* ContentView.swift in Sources */,
 				B822A6D729BA30F200B16999 /* AuthHeaderView.swift in Sources */,
+				B822A6EB29C1D03400B16999 /* ImageUploader.swift in Sources */,
 				B86531A429B63A5000F40978 /* TweetRowView.swift in Sources */,
 				B822A6D429BA2F6900B16999 /* CustomInputField.swift in Sources */,
 				B822A6AF29B75AF300B16999 /* TweetFilterViewModel.swift in Sources */,
 				B86531A129B6396000F40978 /* FeedView.swift in Sources */,
+				B822A6E629BB751600B16999 /* ProfilePhotoSelectorView.swift in Sources */,
 				B822A6B929B8A40400B16999 /* SideMenuView.swift in Sources */,
 				B865318B29B638AC00F40978 /* TwitterSwiftUIApp.swift in Sources */,
 				B88C259529B6471D003B167C /* ExploreView.swift in Sources */,
@@ -469,6 +496,7 @@
 				B822A6B429B8985900B16999 /* UserRowView.swift in Sources */,
 				B822A6CE29B9F0A900B16999 /* LoginView.swift in Sources */,
 				B822A6D029B9F0B500B16999 /* RegistrationView.swift in Sources */,
+				B822A6EF29C2031200B16999 /* User.swift in Sources */,
 				B822A6C729B9E82B00B16999 /* NewTweetView.swift in Sources */,
 				B822A6E429BA647A00B16999 /* AuthViewModel.swift in Sources */,
 				B822A6D229BA26E300B16999 /* RoundedShape.swift in Sources */,
